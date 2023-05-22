@@ -1,8 +1,7 @@
 // My Scripts
 
 
-// Data source from AirTable API
-// Note: We're using NoCode API to make connecting to AirTable easier
+// Data source for roster of students
 const url = "https://v1.nocodeapi.com/pmanikoth/airtable/rsqhQzAAKcMyyPPW?tableName=Roster";
 
 // Get data
