@@ -2,7 +2,7 @@
 
 
 // Data source for roster of students
-const url = "https://v1.nocodeapi.com/pmanikoth/airtable/rsqhQzAAKcMyyPPW?tableName=Roster";
+const url = "https://assets.codepen.io/16425/spring23web3.json";
 
 // Get data
 fetch(url)
@@ -10,27 +10,25 @@ fetch(url)
   .then( data  => {
     // check-check: get one image
     // Note: Webflow returns data in array called `items`
-    console.log(data.records);
-    console.log(data.records[0].fields);
-    console.log(data.records[0].fields.Name);
-    console.log(data.records[0].fields.Emoji);
-    console.log(data.records[0].fields.Color);
-    console.log(data.records[0].fields.Image[0].url);
+    console.log(data);
 
     // get container for data
     const gallery = document.querySelector(".gallery");
 
     // loop through data
-    data.records.forEach( student => {
+    data.forEach( student => {
       
       // template
       const template = `
-          <figure>
-            <figcaption>${student.fields.Name}</figcaption>
-            <p>${student.fields.Emoji}</p>
-            <img src="${student.fields.Image[0].url}" alt="${student.fields.Name}">
-          </figure>
-       `;
+        <figure>
+          <figcaption> ${student.Name} </figcaption>
+          <img src="${student.Image}" alt="Student Name">
+          <p> ${student.Emoji} </p>
+          <p> ${student.Quote} </p>
+          <p> ${student.Superpower} </p>
+          <p> ${student.Color} </p>
+        </figure>
+        `;
 
       // insert EACH `student` record into container
       gallery.insertAdjacentHTML("afterbegin", template);
