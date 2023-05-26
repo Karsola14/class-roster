@@ -8,3 +8,22 @@ main {
     font-family: Nunito-Regular;
     font-size: 30px;
 }
+
+.gallery {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.gallery figure {
+    flex: 1 1 clamp(20ch, calc(1 / 4 * 100%), 100%);
+}
+
+.gallery figure, 
+.gallery img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
