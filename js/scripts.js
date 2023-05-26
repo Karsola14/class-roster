@@ -21,8 +21,8 @@ fetch(url)
       // template
       const template = `
         <figure>
-          <figcaption> ${student.Name} </figcaption>
           <img src="${student.Image}" alt="Student Name">
+          <header> ${student.Name} </header>
           <p> ${student.Emoji} </p>
           <p> ${student.Quote} </p>
           <p> ${student.Superpower} </p>
