@@ -1,7 +1,4 @@
 /* My Styles */
-* {
-    outline: 1px dotted gray;
-}
 
 /* Apply Font/background Color */
 main {
@@ -34,6 +31,7 @@ main {
 .gallery header {
     font-size: 50px;
     font-weight: 700;
+    padding-top: 1rem;
 }
 
 span {
