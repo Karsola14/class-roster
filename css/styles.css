@@ -2,3 +2,9 @@
 * {
     outline: 1px dotted gray;
 }
+
+/* Apply Font */
+main {
+    font-family: Nunito-Regular;
+    font-size: 30px;
+}
