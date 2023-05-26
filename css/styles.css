@@ -3,10 +3,11 @@
     outline: 1px dotted gray;
 }
 
-/* Apply Font */
+/* Apply Font/background Color */
 main {
     font-family: Nunito-Regular;
     font-size: 30px;
+    background-color: #00A3FF;
 }
 
 .gallery {
@@ -15,15 +16,17 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    color: white;
 }
 
 .gallery figure {
     flex: 1 1 clamp(20ch, calc(1 / 4 * 100%), 100%);
+    border: 0.5rem solid white;
+    padding: 1rem;
 }
 
 .gallery figure, 
 .gallery img {
   width: 100%;
   height: 100%;
-  margin: 0;
 }
