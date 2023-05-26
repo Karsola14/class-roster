@@ -16,6 +16,8 @@ Use API endpoint for the _Collection_ provided in class.
 List your sources here
 
 [Font Share](https://www.fontshare.com/)
+[Favicon](https://favicon.io/)
+[Favicon Emoji](https://favicon.io/emoji-favicons/clipboard/)
 
 ## Why Does This Exist? 
 Thre are many have a no-code CMS, and GUIs for designing the templates. AirTable (and many others) also have an API that is accessible as a _headless CMS_. 
